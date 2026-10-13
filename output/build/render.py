@@ -26,7 +26,6 @@ with sync_playwright() as p:
 bg = PdfReader(str(bgp)).pages[0]
 r = PdfReader(str(out)); w = PdfWriter()
 for page in r.pages:
-    base = copy.deepcopy(bg)
-    base.merge_page(page)
-    w.add_page(base)
+    page.merge_page(bg, over=False)
+    w.add_page(page)
 w.write(str(out)); print('bg ok')
