@@ -213,3 +213,54 @@ Oordelen "Eerst testen via dropship" staan bij alle 8 producten. Dat is weinig o
 [V17] OFX, GBP to CNY historical, https://www.ofx.com/en-au/exchange-rates/gbp-to-cny/; ValutaFX 2026-09-04, https://www.valutafx.com/history/cny-gbp-2026-09-04; LongForecast, https://longforecast.com/gbp-cny; CurrencyConvert, https://currencyconvert.online/gbp/cny, geraadpleegd 2026-10-13
 [V18] Food Foundation, januari 2026, https://foodfoundation.org.uk/press-release/survey-finds-millions-uk-turning-weight-loss-drugs-amid-concerns-over-access-and-long; The Pharmacist (IQVIA maart 2025), https://www.thepharmacist.co.uk/clinical/cardiovascular/around-1-5-million-uk-citizens-used-weight-loss-jabs-in-march-2025/; IGD, https://www.igd.com/articles/glp-1-usage-almost-doubles-in-9-months/73015, geraadpleegd 2026-10-13
 [V19] Myprotein, Creatine Gummies productpagina, https://www.myprotein.com/p/sports-nutrition/creatine-gummies/13528283; Holland & Barrett, Myprotein Creatine Gummies 21, https://www.hollandandbarrett.com/shop/product/myprotein-creatine-gummies-lemon-21-gummies-6100028119, geraadpleegd 2026-10-13
+
+---
+
+## 7. Ronde 2: eindrapport
+
+Gecontroleerd: /tmp/claude-0/report_text.txt (platte tekst) en steekproefsgewijs /home/user/Claude/output/lorea-gummies-markt-analyse.html (tekst komt overeen). Geen nieuw webonderzoek.
+
+### 7.0 Wat klopt (kort)
+- **Scoretabel (c):** alle 8 gewogen en ongewogen scores herberekend met de gewichten 15/10/10/15/10/15/15/10 (som 100%): **alle correct** (bv. magnesium 0,60+0,20+0,20+0,60+0,40+0,45+0,60+0,30 = 3,35; lion's mane, greens en combi 19/8 = 2,375, dus 2,38). De ranking in de managementsamenvatting komt overeen met hoofdstuk 5.
+- **Prijs per dagdosis (c):** alle cellen in de tabellen van 4.1 tot 4.8 opnieuw berekend: geen rekenfouten. Verwerkte correcties uit ronde 1 (fourfive-europrijs weg, ACV in USD, Known-stack £1,74, WeightWorld 9,99/45) kloppen.
+- **Claimteksten (d):** creatine 55+ ("over the age of 55"), vitamine C ("the normal function"), magnesium ("a reduction"), hair, electrolytes, B5 en B12: **conform verificatie**. Mg-drempel 56,25 mg / formuleer op 57 mg en 004UKNHCC zijn correct verwerkt.
+- **Em- en en-dashes (e):** **0** in de platte tekst en **0** in de HTML (ook geen `&mdash;`/`&ndash;`).
+
+### 7.1 Tegenstrijdigheden samenvatting vs hoofdstukken 3 tot 6 (a)
+
+| # | Tekst nu in het rapport | Probleem | Voorgestelde vervanging |
+|---|---|---|---|
+| a1 | Hfst. 1, tabel ACV: "prijzen tot £0,22 per dag." | "tot" suggereert een maximum; £0,22 is de laagste prijs (band £0,22 tot £0,63, hfst. 4.8). | "prijzen vanaf £0,22 per dag." |
+| a2 | Hfst. 1, tabel combi: "4 tot 5 gummies per dag." en hfst. 3 claimtabel: "Nee (4 tot 5 gummies nodig)" tegenover hfst. 4.7: "Bij 0,9 tot 2,0 g actief per gummy: 3 tot 5 gummies AANNAME ." | Twee ranges voor dezelfde rekensom (4,4 g / 2,0 = 2,2, dus 3; 4,4 / 0,9 = 4,9, dus 5). | In 4.7: "Bij 0,9 tot 2,0 g actief per gummy: 3 tot 5 gummies, realistisch 4 tot 5 AANNAME ." (samenvatting en claimtabel kunnen dan blijven staan). |
+| a3 | Hfst. 1: "1 Magnesium 3,35 Bulk-kandidaat" en 4.1: "Bulk-kandidaat zekerheid middel." | De meso-analyse gaf "Eerst testen via dropship". Bij combi en ACV legt het rapport de afwijking van het meso-oordeel uit ("Het meso-onderzoek gaf ..."), bij magnesium niet. | In 4.1 toevoegen na "Bulk-kandidaat zekerheid middel.": "Het meso-onderzoek gaf 'eerst testen via dropship'; wij noemen magnesium een bulk-kandidaat omdat het als enige geen stabiliteits-, claim- of seizoensvalkuil heeft, maar pas na een dropshiptest van 60 dagen." |
+| a4 | Hfst. 1: "stabiele vraag" (magnesium); 4.1: "Meest stabiele vraag van de acht"; hfst. 6 tabel: "Magnesium Hoog" (vraag-stabiliteit). | Niet onderbouwd: UK Trends niet geverifieerd, UK-marktcijfer uit één bron [MG5], seizoen is AANNAME. | Hfst. 1: "groeiende, weinig seizoensgebonden vraag (UK niet geverifieerd)"; 4.1: "Naar de beschikbare signalen de meest stabiele vraag van de acht [MG1, MG2, MG5] AANNAME ."; hfst. 6: "Middel tot hoog AANNAME ". |
+| a5 | Hfst. 5: "Lion's mane staat bij gelijke score vóór greens." | De volgorde bij gelijke score (2,45 en ongewogen 2,38) is niet uitgelegd; hfst. 1 nummert ze als 5 en 6. | "Lion's mane en greens delen plek 5 (gelijke gewogen en ongewogen score); de volgorde in de tabel is willekeurig." En in hfst. 1 beide als "5" nummeren, of "5=" en "5=". |
+| a6 | 4.6: "Er is een prijsgat tussen £0,50 en £2,25 per dag." en hfst. 1: "Gat in het middensegment" | Starpowa (H&B) staat in dezelfde tabel op £1,00 per dag; het gat is dus niet leeg. | "Het middensegment is dun bezet: tussen budget (£0,47 tot £0,48) en Grüns (£2,25) staat alleen Starpowa op £1,00 per dag." |
+| a7 | Hfst. 2: "Prijs per dagdosis = ... Reguliere prijs, actieprijs apart vermeld." tegenover 4.4 header en tabel: "£0,68 tot £1,17 per dag" met Known "£13,59 (was £16,99) ... 13,59 / 15 = £0,91"; 4.5 header "£0,45 tot £1,05" met Known "£13,59 (was £16,99) ... £0,45". | De banden zijn berekend op actieprijzen, in strijd met de eigen methode. Regulier: Known Electrolytes £1,13, Known Lion's mane £0,57. | 4.4 tabel: "16,99 / 15 = £1,13 (actie £0,91)"; band blijft £0,68 tot £1,17. 4.5 tabel: "16,99 / 30 = £0,57 (actie £0,45)"; header "£0,50 tot £1,05 per dag (actie vanaf £0,45)". Hair (Hairburst £14,30, RRP £22) en creatine (Nourished £17,98 sale) idem labelen als actieprijs. |
+| a8 | Hfst. 1 top 3: creatine "richt op de bewuste oudere (55+-krachttrainingsclaim) en vrouwen." | Botst niet met de regels, maar 4.3 zegt "Geen ... 'for women'-claim". Lezer kan denken dat vrouwen een claimdoelgroep is. | "richt op de bewuste oudere (55+-krachttrainingsclaim) en, zonder doelgroepclaim, op vrouwen die krachttrainen." |
+
+Geen tegenstrijdigheden gevonden in: zekerheden (hfst. 1 = hfst. 4 = hfst. 6 voor alle 8 producten), bulkoordelen (hfst. 1 = hfst. 4 = hfst. 6), creatine- en hairprijsbanden, CPI, GBP/CNY, testcijfers (NOW 5 tot 6, James Smith 1/3/5).
+
+### 7.2 Getallen zonder bron of AANNAME (b)
+
+| # | Tekst nu in het rapport | Voorgestelde vervanging |
+|---|---|---|
+| b1 | Hfst. 1 top 3: "prijs per dag zichtbaar rond £0,55 tot £0,65 (markt £0,57 tot £0,67 [MG9, MG13] )." | "prijs per dag zichtbaar rond £0,55 tot £0,65 AANNAME (doelprijs net onder de markt van £0,57 tot £0,67 [MG9, MG13] )." |
+| b2 | 4.3: "CAC versus marge bij £0,60 tot £0,83 per dag" | "CAC versus marge bij £0,60 tot £0,83 per dag (marktband [C10, C16])" |
+| b3 | 4.6: "CPA versus marge bij £0,60 tot £1,00 per dag" | "CPA versus marge bij £0,60 tot £1,00 per dag AANNAME (doelprijs middensegment)" |
+| b4 | 4.8: "CAC ruim onder de marge bij £0,30 tot £0,50 per dag." | "CAC ruim onder de marge bij £0,30 tot £0,50 per dag AANNAME (doelprijs)." |
+| b5 | 4.1 header: "£0,27 tot £0,32 per dag, Amazon-generiek en Myvitamins [MG18, MG19]" | Het Amazon-cijfer veronderstelt 2 per dag: "£0,27 (Amazon-generiek, bij 2 per dag AANNAME ) tot £0,32 (Myvitamins) [MG18, MG19]" |
+| b6 | 4.1: "Claims: vier geautoriseerde claims op het hoofdingrediënt (...) [V3] CHECK CLAIM ." | [V3] is de updatelijst van het GB-register en is geen bron voor de claimteksten. Vervang door "[M2] CHECK CLAIM ." (V3 alleen houden bij de zin "geen slaapclaim"). |
+| b7 | 4.4 header: "23,5 mg natrium per gummy, tegen ca. 500 mg per Liquid I.V.-stick [E26, E13]" en 4.4: "ca. 21x minder natrium dan een stick (500 / 23,5)" | In orde (afleiding uit gebronde cijfers). Geen wijziging. |
+| b8 | Hfst. 3 claimtabel combi: "3 g creatine plus 56,25 mg Mg of 300 mg K" | Geen bronprobleem, wel consistentie met de rest: "3 g creatine plus minimaal 57 mg Mg (15% NRV = 56,25 mg) of 300 mg K". |
+
+Overige getallen hebben een [X#]-verwijzing of AANNAME-label; afgeleide getallen (prijsbanden, scoreverschillen) volgen uit gebronde tabellen.
+
+### 7.3 Rekenfouten (c)
+Geen rekenfouten gevonden in de prijs per dagdosis of de scoretabel. Alleen de methode-inconsistentie in a7 (actieprijs als hoofdprijs).
+
+### 7.4 Claimteksten (d)
+Geen afwijkingen ten opzichte van de verificatie. Eén kanttekening: de claimtabel in hfst. 3 noemt voor electrolytes "56,25 mg Mg" als voorwaarde; dat is correct als drempel, maar het advies elders is "formuleer op 57 mg of meer". Voeg dat hier ook toe (zie b8).
+
+### 7.5 Em- en en-dashes (e)
+Geen gevonden (0 in tekst en HTML).
