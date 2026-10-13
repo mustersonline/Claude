@@ -14,7 +14,7 @@ def parse(path):
     out = []
     for line in m.group(1).splitlines():
         line = line.strip().lstrip('-* ').strip()
-        mm = re.match(r'\[S?(\d+[a-z]?)\]\s*(.*)', line)
+        mm = re.match(r'\[[A-Z]?(\d+[a-z]?)\]\s*(.*)', line)
         if mm: out.append((mm.group(1), mm.group(2)))
         elif re.match(r'^## ', line): break
     return out

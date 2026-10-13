@@ -16,15 +16,15 @@ CRIT = [  # (key, label, weight)
     ('fit', 'Fit met Lorea-branding', 0.15),
     ('bulk', 'Bulk-geschiktheid', 0.10),
 ]
-SCORES = {
-    'Magnesium':     dict(markt=4, conc=2, prijs=3, herhaal=4, claim=3, risico=3, fit=4, bulk=3),
+SCORES = {  # na verificatie gelijkgetrokken (zie research/verificatie.md, sectie 5)
+    'Magnesium':     dict(markt=4, conc=2, prijs=2, herhaal=4, claim=4, risico=3, fit=4, bulk=3),
+    'Hair':          dict(markt=3, conc=1, prijs=2, herhaal=4, claim=4, risico=3, fit=3, bulk=2),
     'Creatine':      dict(markt=4, conc=2, prijs=3, herhaal=4, claim=3, risico=1, fit=3, bulk=2),
-    'Hair':          dict(markt=3, conc=1, prijs=2, herhaal=4, claim=3, risico=3, fit=3, bulk=2),
-    "Lion's mane":   dict(markt=3, conc=2, prijs=3, herhaal=3, claim=2, risico=2, fit=4, bulk=2),
-    'Greens':        dict(markt=3, conc=2, prijs=3, herhaal=3, claim=2, risico=2, fit=3, bulk=2),
     'Electrolytes':  dict(markt=3, conc=3, prijs=3, herhaal=2, claim=2, risico=2, fit=3, bulk=2),
-    'Combi creatine + electrolytes': dict(markt=3, conc=2, prijs=3, herhaal=4, claim=2, risico=1, fit=2, bulk=1),
-    'ACV':           dict(markt=3, conc=1, prijs=2, herhaal=3, claim=1, risico=1, fit=2, bulk=2),
+    "Lion's mane":   dict(markt=3, conc=2, prijs=3, herhaal=3, claim=1, risico=2, fit=3, bulk=2),
+    'Greens':        dict(markt=3, conc=2, prijs=3, herhaal=3, claim=1, risico=2, fit=3, bulk=2),
+    'Combi creatine + electrolytes': dict(markt=3, conc=2, prijs=3, herhaal=4, claim=3, risico=1, fit=2, bulk=1),
+    'ACV':           dict(markt=3, conc=1, prijs=2, herhaal=3, claim=1, risico=2, fit=2, bulk=2),
 }
 assert abs(sum(w for *_, w in CRIT) - 1) < 1e-9
 
